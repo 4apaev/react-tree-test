@@ -1,0 +1,105 @@
+* {
+  box-sizing: border-box
+}
+
+article, aside, footer, header, nav, section, main, html, body, div, a, ol, li, ul, dl, dd, dt, button, select, input, label, form, fieldset, h1, h2, h3, h4, h5, h6, p, pre {
+  padding: 0;
+  margin:  0
+}
+
+button, input, select, textarea, fieldset {
+  outline:   none;
+  border:    none;
+  font-size: 100%
+}
+
+button:focus, input:focus, select:focus, textarea:focus, fieldset:focus, pre:focus {
+  outline: none
+}
+
+article, aside, footer, header, nav, section, main {
+  display: block
+}
+
+ol, li, ul {
+  list-style: none
+}
+
+a,
+button {
+  text-decoration: none;
+  cursor:          pointer
+}
+
+body {
+  color:    #666;
+  font:     14px/24px "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  padding: 1em;
+}
+
+input {
+  border:        1px solid #ccc;
+  border-radius: 3px;
+  line-height:   2;
+  padding:       0 .5em;
+}
+input:focus {
+  background: lightyellow;
+  box-shadow: inset  0 0 2px #ccc;
+}
+
+label {
+  line-height: 2;
+  display: block;
+}
+
+h1,h2,h3 {
+  margin-bottom: 1em;
+  line-height: 2;
+}
+
+button {
+  border-radius: 3px;
+  background:    #f0f0f0;
+  line-height:   2;
+  padding:       0 .5em;
+  color:         #777;
+  cursor:        pointer;
+  transition: all .25s;
+}
+
+.ok { background: forestgreen; color: #fff; }
+.ok:hover { background: darkgreen }
+
+.err { background: transparent; color: tomato }
+.err:hover { background: hotpink; color: #fff; }
+
+.info { background: transparent; color: teal }
+.info:hover { background: deepskyblue; color: #fff; }
+
+.tree {
+  padding: .25em;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  margin: 2px;
+  order: 1;
+  display: flex;
+  flex-direction: column;
+}
+.tree .tree { padding-left: 1em; }
+.entry, .title {
+  display: block;
+  margin: 0;
+  line-height: 2;
+  font-weight: 100;
+}
+.title { cursor: pointer; font-size: 1.2em; }
+.entry { font-size: .95em; display: block; }
+
+
+
+/* ✓ ✔
+❬❭ ❮❯ ❰❱
+▲▼◀▶
+✕ ⨉ 𐄂 × ⨯
+✕ ✖ ✗ ✘ ✚ */

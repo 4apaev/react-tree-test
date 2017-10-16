@@ -1,0 +1,28 @@
+{
+  "name": "js-interview",
+  "version": "1.0.0",
+  "description": "react-tree js-interview",
+  "main": "index.js",
+  "author": "Michael Miretsky",
+  "repository": {
+    "type": "git"
+  },
+  "scripts": {
+    "start": "node index",
+    "build": "webpack -d --display-error-details",
+    "watch": "webpack -d --watch"
+  },
+  "dependencies": {
+    "react": "latest",
+    "react-dom": "latest"
+  },
+  "devDependencies": {
+    "webpack": "latest",
+    "babel-core": "latest",
+    "babel-loader": "latest",
+    "babel-preset-react": "latest",
+    "babel-preset-es2017": "latest",
+    "babel-plugin-transform-class-properties": "latest",
+    "babel-plugin-transform-object-rest-spread": "latest"
+  }
+}
