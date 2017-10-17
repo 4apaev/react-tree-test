@@ -96,6 +96,11 @@ button {
 .title { cursor: pointer; font-size: 1.2em; }
 .entry { font-size: .95em; display: block; }
 
+.tree b {
+  display: inline-block;
+  padding: 0 1em;
+}
+
 
 
 /* ✓ ✔

@@ -13,15 +13,11 @@ Mim
   .set('css', 'text/css')
   .set('ico', 'image/x-icon');
 
-
 module.exports = (basedir=process.cwd()) => (req, res, url=req.url) => {
   const path = Path.join(basedir, url);
 
   Fs.stat(path, (err, stats) => {
     if (err || !stats.isFile()) {
-
-      console.log(path, err && err.message)
-
       const msg = '404 Not Found...';
       res.writeHead(404, {
         'Content-Type': 'text/plain',
