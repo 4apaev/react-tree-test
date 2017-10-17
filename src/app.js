@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import ReactDom from 'react-dom';
 import { Tree } from './tree';
-import * as util from './util';
+
 
 class App extends Component {
 
@@ -44,10 +44,8 @@ class App extends Component {
         : <Tree name={ value } data={ data } />
       }
     </div>
-
   }
 }
 
-export { util, App, Tree }
 export const init = () => ReactDom.render(<App/>, document.getElementById('app'));
 
